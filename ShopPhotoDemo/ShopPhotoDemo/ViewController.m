@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) UITableView *backgroundView;
+
 @end
 
 @implementation ViewController
@@ -19,6 +21,15 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)setupUI {
+    self.backgroundView = [[UITableView alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:self.backgroundView];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.backgroundView.frame = self.view.bounds;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
