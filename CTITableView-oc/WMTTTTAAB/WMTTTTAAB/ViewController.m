@@ -88,6 +88,43 @@
 
 }
 
+- (void)model {
+    ///** 图片id*/
+    //@property (nonatomic, assign) NSInteger picId;
+    ///** 缩略图链接*/
+    //@property (nonatomic, copy) NSString * thumbUrl;
+    ///** 大图链接*/
+    //@property (nonatomic, copy) NSString * url;
+    ///** 图片添加时间*/
+    //@property (nonatomic, copy) NSString * time;
+    ///** 点赞总数（相册有）*/
+    //@property (nonatomic, assign) NSInteger praiseCount;
+    ///** 对应价格（相册和单图都有）*/
+    //@property (nonatomic, copy) NSString * price;
+    ///** 标题*/
+    //@property (nonatomic, copy) NSString * title;
+    ///** 图片tag*/
+    //@property (nonatomic, copy) NSString * tag;
+    ///** 用户昵称*/
+    //@property (nonatomic, copy) NSString * userName;
+    ///** 用户id*/
+    //@property (nonatomic, assign) NSInteger userID;
+    ///** 类型，0：普通商户图片，1：相册，2：相册中的更多*/
+    //@property (nonatomic, assign) NSInteger type;
+    ///** 对应图片总数（相册有）*/
+    //@property (nonatomic, assign) NSInteger photoCount;
+    ///** 是否是全景图，只有官方相册才有全景图*/
+    //@property (nonatomic, assign) BOOL isFullPic;
+    ///** 视频id或者图片picId*/
+    //@property (nonatomic, copy) NSString * mainId;
+    ///** 图片举报链接*/
+    //@property (nonatomic, copy) NSString * picReportUrl;
+    ///** 商户相册图片菜品详情链接*/
+    //@property (nonatomic, copy) NSString * photoDetailUrl;
+    //
+
+}
+
 - (void)valuedChanged:(UISegmentedControl *)segment {
     [self scrollToIndexTable:segment.selectedSegmentIndex];
 }
